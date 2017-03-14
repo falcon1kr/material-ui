@@ -9,13 +9,13 @@ function getStyles(props, context) {
       position: 'relative',
     },
     title: {
-      fontSize: 24,
+      fontSize: card.fontSize + 10,
       color: props.titleColor || card.titleColor,
       display: 'block',
       lineHeight: '36px',
     },
     subtitle: {
-      fontSize: 14,
+      fontSize: card.fontSize,
       color: props.subtitleColor || card.subtitleColor,
       display: 'block',
     },

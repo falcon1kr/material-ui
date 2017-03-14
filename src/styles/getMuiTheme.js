@@ -67,6 +67,7 @@ export default function getMuiTheme(muiTheme, ...more) {
       subtitleColor: fade(palette.textColor, 0.54),
       fontWeight: typography.fontWeightMedium,
       spacing: spacing.desktopGutterLess,
+      fontSize: 14,
     },
     cardMedia: {
       color: darkWhite,

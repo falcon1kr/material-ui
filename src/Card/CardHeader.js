@@ -24,12 +24,12 @@ function getStyles(props, context) {
     title: {
       color: props.titleColor || card.titleColor,
       display: 'block',
-      fontSize: 15,
+      fontSize: card.fontSize + 1,
     },
     subtitle: {
       color: props.subtitleColor || card.subtitleColor,
       display: 'block',
-      fontSize: 14,
+      fontSize: card.fontSize,
     },
   };
 }

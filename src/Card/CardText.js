@@ -6,7 +6,7 @@ function getStyles(props, context) {
   return {
     root: {
       padding: card.spacing,
-      fontSize: 14,
+      fontSize: card.fontSize,
       color: props.color || cardText.textColor,
     },
   };
