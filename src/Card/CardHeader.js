@@ -6,7 +6,7 @@ function getStyles(props, context) {
 
   return {
     root: {
-      padding: 16,
+      padding: card.spacing,
       fontWeight: card.fontWeight,
       boxSizing: 'border-box',
       position: 'relative',
@@ -19,7 +19,7 @@ function getStyles(props, context) {
       paddingRight: '90px',
     },
     avatar: {
-      marginRight: 16,
+      marginRight: card.spacing,
     },
     title: {
       color: props.titleColor || card.titleColor,

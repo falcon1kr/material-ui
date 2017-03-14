@@ -1,13 +1,15 @@
 import React, {Component, PropTypes} from 'react';
 
-function getStyles() {
+function getStyles(props, context) {
+  const {card} = context.muiTheme;
+
   return {
     root: {
-      padding: 8,
+      padding: card.spacing / 2,
       position: 'relative',
     },
     action: {
-      marginRight: 8,
+      marginRight: card.spacing / 2,
     },
   };
 }

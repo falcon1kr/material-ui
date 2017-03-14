@@ -45,6 +45,10 @@ class Card extends Component {
     style: PropTypes.object,
   };
 
+  static contextTypes = {
+    muiTheme: PropTypes.object.isRequired,
+  };
+
   static defaultProps = {
     expandable: false,
     expanded: null,
@@ -127,15 +131,17 @@ class Card extends Component {
     }, this);
 
     // If the last element is text or a title we should add
-    // 8px padding to the bottom of the card
+    // (card.spacing / 2)px padding to the bottom of the card
     const addBottomPadding = (lastElement && (lastElement.type.muiName === 'CardText' ||
       lastElement.type.muiName === 'CardTitle'));
+
+    const {card} = this.context.muiTheme;
 
     const mergedStyles = Object.assign({
       zIndex: 1,
     }, style);
     const containerMergedStyles = Object.assign({
-      paddingBottom: addBottomPadding ? 8 : 0,
+      paddingBottom: addBottomPadding ? (card.spacing / 2) : 0,
     }, containerStyle);
 
     return (

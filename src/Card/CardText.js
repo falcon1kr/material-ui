@@ -1,11 +1,11 @@
 import React, {Component, PropTypes} from 'react';
 
 function getStyles(props, context) {
-  const {cardText} = context.muiTheme;
+  const {card, cardText} = context.muiTheme;
 
   return {
     root: {
-      padding: 16,
+      padding: card.spacing,
       fontSize: 14,
       color: props.color || cardText.textColor,
     },

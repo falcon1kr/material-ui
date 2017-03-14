@@ -5,7 +5,7 @@ function getStyles(props, context) {
 
   return {
     root: {
-      padding: 16,
+      padding: card.spacing,
       position: 'relative',
     },
     title: {

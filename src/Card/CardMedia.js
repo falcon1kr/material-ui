@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 
 function getStyles(props, context) {
-  const {cardMedia} = context.muiTheme;
+  const {card, cardMedia} = context.muiTheme;
 
   return {
     root: {
@@ -23,7 +23,7 @@ function getStyles(props, context) {
       bottom: 0,
       right: 0,
       left: 0,
-      paddingTop: 8,
+      paddingTop: card.spacing / 2,
       background: cardMedia.overlayContentBackground,
     },
     media: {},
